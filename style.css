@@ -5,12 +5,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(0, 0, 33);
   color: white;
   font-family: "Poppins", sans-serif;
+  
 }
 
 html {
@@ -306,7 +308,7 @@ section {
 
 .arrow {
   position: fixed;
-  font-size: 5rem;
+  font-size: 3rem;
   color:white;
   cursor: pointer;
   z-index: 999;
@@ -356,8 +358,8 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  right: -7.7rem;
+  bottom: 15rem;
 }
 
 .details-container {
@@ -516,4 +518,48 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+/* Adjusted circle container styling */
+.circle-container {
+  position: absolute; /* Change to absolute */
+  top: 284%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  right: 20px;
+  z-index: 2;
+  margin:auto;
+}
+
+/* Added padding to the content area to create space for the circle container */
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px; /* Adjust the font-size as needed */
+}
+.circle-container i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Adjusted font size for the icons */
+
+
+.line {
+  width: 3px;
+  height: 650px;
+  border: 2px solid #FFFFFF;
+  margin: 0px 28px;
 }
